@@ -36,7 +36,7 @@
   height: 50px;
   width: 150px;
   margin-left: auto;
-  border: #fff 2px solid;
+  border: 2px solid #fff;
   cursor: pointer;
 }
 
@@ -77,4 +77,26 @@
   object-fit: cover;
   background-position: center;
   margin-right: 24px;
+}
+
+@media screen and (max-width: 480px) {
+  .profile {
+    flex-direction: column;
+  }
+
+  .profile__info {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    width: 100%;
+  }
+
+  .profile__description {
+    width: 100%;
+    text-align: center;
+  }
+
+  .profile__add-button {
+    margin: 0;
+  }
 }
