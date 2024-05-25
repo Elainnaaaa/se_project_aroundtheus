@@ -10,8 +10,15 @@
   margin: 0 auto;
   box-sizing: border-box;
 }
+
 .page__content {
   display: flex;
   flex-direction: column;
   min-height: 100vh;
+}
+
+@media screen and (max-width: 480px) {
+  .page {
+    padding: 19px;
+  }
 }
