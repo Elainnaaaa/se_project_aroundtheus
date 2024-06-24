@@ -8,6 +8,7 @@
   z-index: 999;
   display: flex;
   padding: 0 19px;
+  visibility: hidden;
 }
 
 .modal__container {
@@ -19,6 +20,13 @@
   width: 90%;
   max-width: 400px;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+}
+
+.modal_opened {
+  transition: visibility 0.3s, opacity 0.3s;
+  visibility: visible;
+  opacity: 1;
+  transition-delay: 0s;
 }
 
 .modal__close {
