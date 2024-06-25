@@ -64,8 +64,8 @@ function getCardElement(cardData) {
 /* Event Handlers */
 function handleProfileEditSubmit(e) {
   e.preventDefault();
-  profileTitle.content = profileTitleInput.value;
-  profileDescription.content = profileDescriptionInput.value;
+  profileTitle.innerHTML = profileTitleInput.value;
+  profileDescription.innerHTML = profileDescriptionInput.value;
   closePopup();
 }
 
@@ -85,7 +85,7 @@ profileAddButton.addEventListener("click", () => {
 profileEditModalClose.addEventListener("click", closePopup);
 profileAddModalClose.addEventListener("click", closePopup);
 
-profileEditButton.addEventListener("submit", handleProfileEditSubmit);
+profileEditForm.addEventListener("submit", handleProfileEditSubmit);
 profileAddButton.addEventListener("submit", handleProfileEditSubmit);
 
 initialCards.forEach((cardData) => {
