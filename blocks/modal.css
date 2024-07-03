@@ -86,7 +86,6 @@
   background-color: black;
   color: #fff;
   border: none;
-  border-radius: 5px;
   font-size: 16px;
   cursor: pointer;
   font-family: "Inter", "Arial", sans-serif;
@@ -104,13 +103,12 @@
 @media screen and (max-width: 550px) {
   .modal__container {
     width: 282px;
-    height: 322px;
     padding: 36px;
   }
 
   .modal__heading {
-    margin-top: 36px;
-    margin-left: 19px;
+    margin-top: 0;
+    margin-left: 0;
     font-size: 18px;
     line-height: 22px;
   }
